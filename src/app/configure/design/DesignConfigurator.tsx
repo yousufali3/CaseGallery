@@ -274,6 +274,9 @@ const DesignConfigurator = ({
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                       <Button
+                        isLoading={isPending}
+                        disabled={isPending}
+                        loadingText="Saving"
                         variant="outline"
                         role="combobox"
                         className="w-full justify-between"
